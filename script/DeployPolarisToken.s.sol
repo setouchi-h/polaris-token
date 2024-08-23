@@ -5,7 +5,7 @@ import {Script} from "forge-std/Script.sol";
 import {PolarisToken} from "../src/PolarisToken.sol";
 import {HelperConfig} from "./HelperConfig.s.sol";
 
-contract DeployTestSMP is Script {
+contract DeployPolarisToken is Script {
     function run() external returns (PolarisToken) {
         HelperConfig helperConfig = new HelperConfig();
         (address deployer) = helperConfig.activeNetworkConfig();
