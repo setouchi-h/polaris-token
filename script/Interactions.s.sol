@@ -23,7 +23,7 @@ contract MintPolarisToken is Script {
     function run() external {
         address mostRecentlyDeployed = DevOpsTools.get_most_recent_deployment("PolarisToken", block.chainid);
         // ここでrecipientを指定
-        address recipient = 0x5162Fa0091405C957C83ceBa659EbE256dBC111b;
+        address recipient = 0xE3Fe7359271b4eFa7Efd38c0051f1ee7Eb6a6b0E;
         mintUsingConfig(mostRecentlyDeployed, recipient);
     }
 }
