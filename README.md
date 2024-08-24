@@ -2,6 +2,13 @@
 
 ## Address
 
+### Linea Sepolia
+
+- Polaris: 0xAaf6A734114437b719c28cfd44c0b2B515eD29be
+- PolarisToken: 0xAa3FDEB44B7bb1C0A366685c0A10b1a2aEa6548C
+
+### Base Sepolia
+
 - Polaris: 0x35B9B2B23f01452eab2095d074966F99A1d1aAd0
 - PolarisToken: 0xAaf6A734114437b719c28cfd44c0b2B515eD29be
 

@@ -14,12 +14,18 @@ contract HelperConfig is Script {
     constructor() {
         if (block.chainid == 84532) {
             activeNetworkConfig = getBaseSepoliaEthConfig();
+        } else if (block.chainid == 59141) {
+            activeNetworkConfig = getLineaSepoliaEthConfig();
         } else {
             revert("Unsupported network");
         }
     }
 
     function getBaseSepoliaEthConfig() public view returns (NetworkConfig memory) {
+        return NetworkConfig({deployer: DEPLOYER_ADDRESS});
+    }
+
+    function getLineaSepoliaEthConfig() public view returns (NetworkConfig memory) {
         return NetworkConfig({deployer: DEPLOYER_ADDRESS});
     }
 }
